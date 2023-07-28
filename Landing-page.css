@@ -39,14 +39,16 @@
   border: none;
 }
 
-.prueba select {
-  appearance: none !important;
+.elemento-menu {
+  color: #fcbf49;
+  list-style: none !important;
+  text-decoration: none !important;
 }
 
 /* =========================== CENTRO DE LA PAGINA - MAIN===================================== */
 
 .imagen-container {
-  border-bottom: 2px solid #d62828;
+  border-bottom: 0.5px solid #d62828;
   width: 90%;
 }
 
@@ -55,7 +57,7 @@
   height: 300px;
   padding-bottom: 100px;
   background-image: url(img-pas-1/img-comunidad.JPG);
-  background-color: aqua;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,9 +100,171 @@
   color: #fcbf49;
 }
 
-/* ============================IMAGENES DE EMPRENDEDORES ===================================== */
+/* ============================SCROLL EMPRENDEDORES ===================================== */
 
-.imagenes-emp {
-  width: 200px;
-  height: 200px !important;
+.scroll-container {
+  margin: auto;
+  margin-top: 30px;
+
+  width: 70%;
+  height: 350px;
+  overflow-x: auto;
 }
+
+.scroll-horizontal {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+article::-webkit-scrollbar {
+  
+  border-radius: 10px 0 10px 0;
+}
+
+article::-webkit-scrollbar-track {
+  background-color: ;
+  border-radius: 10px 0 10px 0;
+}
+
+article::-webkit-scrollbar-thumb {
+  background-color: #003049;
+  border-radius: 10px 0 10px 0;
+  height: 5px;
+  border: 3px solid white;
+}
+
+/* ===============================IMAGENES EMPRENDEDORES POSTRES ===================================== */
+
+.scroll-imagen1 {
+  background-image: url(img-pas-1/logo-pasteleria-1.jpg);
+}
+
+.scroll-imagen2 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 2.jpg);
+}
+
+.scroll-imagen3 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 3.png);
+}
+
+.scroll-imagen4 {
+  background-image: url(img-pas-1/logo-pasteleria-4.jpg);
+}
+
+.scroll-imagen5 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 5.png);
+}
+
+.scroll-imagen6 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 6.jpg);
+}
+
+.scroll-imagen7 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 7.png);
+}
+
+.scroll-imagen8 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 8.png);
+}
+
+.scroll-media {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  margin: 0 40px 30px;
+  border-radius: 20px 0 20px 0;
+  border: #d62828 1px solid;
+}
+
+
+
+
+
+/* ============================SCROLL EMPRENDEDORES ===================================== */
+
+.scroll-container {
+  margin: auto;
+  margin-top: 30px;
+
+  width: 70%;
+  height: 350px;
+  overflow-x: auto;
+}
+
+.scroll-horizontal {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+article::-webkit-scrollbar {
+  
+  border-radius: 10px 0 10px 0;
+}
+
+article::-webkit-scrollbar-track {
+  background-color: ;
+  border-radius: 10px 0 10px 0;
+}
+
+article::-webkit-scrollbar-thumb {
+  background-color: #003049;
+  border-radius: 10px 0 10px 0;
+  height: 5px;
+  border: 3px solid white;
+}
+
+/* ===============================IMAGENES EMPRENDEDORES COMIDA RAPIDA ===================================== */
+
+.scroll-imagen-cr1 {
+  background-image: url();
+}
+
+.scroll-imagen-cr2 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 2.jpg);
+}
+
+.scroll-imagen-cr3 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 3.png);
+}
+
+.scroll-imagen-cr4 {
+  background-image: url(img-pas-1/logo-pasteleria-4.jpg);
+}
+
+.scroll-imagen-cr5 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 5.png);
+}
+
+.scroll-imagen-cr6 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 6.jpg);
+}
+
+.scroll-imagen-cr7 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 7.png);
+}
+
+.scroll-imagen-cr8 {
+  background-image: url(img-pas-1/logo\ pasteleria\ 8.png);
+}
+
+.scroll-media {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  margin: 0 40px 30px;
+  border-radius: 20px 0 20px 0;
+  border: #d62828 1px solid;
+}
+
