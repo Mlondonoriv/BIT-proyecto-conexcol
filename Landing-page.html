@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="Landing-page.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-color">
       <section class="container-fluid">
         <!--======================= ICONO Y NOMBRE ============================== -->
 
@@ -70,7 +70,7 @@
             <!-- ======= INGRESO =========== -->
 
             <ul class="navbar-nav me-auto">
-              <li class="nav-item dropdown">
+              <li class="ingreso-dropdown nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle text-warning"
                   href="#"
@@ -91,14 +91,14 @@
                       class="d-flex justify-content-space- dropdown-item"
                       href="#"
                     >
-                      <span>Usuario </span>
+                      <span class="text-color-yellow">Usuario </span>
                       <span class="ms-auto"><input type="text" /></span>
                     </a>
                   </li>
 
                   <li class="d-flex">
-                    <a class="w-50 elemento-menu dropdown-item" href="#"
-                      ><span>Contraseña</span>
+                    <a class="elemento-menu dropdown-item" href="#"
+                      ><span class="text-color-yellow">Contraseña</span>
                       <span class="ms-auto"><input type="password" /></span
                     ></a>
                   </li>
@@ -112,7 +112,7 @@
               <ul class="navbar-nav me-auto">
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle text-warning"
+                    class="nav-link dropdown-toggle text-color-yellow"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -127,11 +127,17 @@
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a class="elemento-menu dropdown-item" href="#"
+                      <a
+                        class="elemento-menu dropdown-item text-color-yellow"
+                        href="#"
                         >Comidas Rápidas</a
                       >
                     </li>
-                    <li><a class="dropdown-item" href="#">Postres</a></li>
+                    <li>
+                      <a class="dropdown-item text-color-yellow" href="#"
+                        >Postres</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -163,35 +169,77 @@
         </div>
       </section>
     </nav>
-<!-- ==========================================================MAIN / IMAGEN PRINCIPAL Y FOTOS EMPRENDEDORES===================================== -->
+    <!-- ==========================================================MAIN / IMAGEN PRINCIPAL Y FOTOS EMPRENDEDORES===================================== -->
     <main>
       <section class="container-fluid">
         <div class="row d-flex justify-content-center">
           <div
             class="imagen-container justify-content-center bg-danger pt-4 col-12"
           >
-            <div class="imagen-personas mb-4"></div>
+            <!-- ============================== IMAGEN PERSONAS CON TEXTO GLASS EFFECT============================================ -->
+            <div
+              class="imagen-personas mb-4 d-flex justify-content-center align-items-center flex-column"
+            >
+              <div
+                class="transparencia glass-effect mt-5 d-flex align-items-center justify-content-center"
+              >
+                <p class="emprender fs-1">
+                  Emprender Para Avanzar. <br />
+                  Conectarnos para crecer.
+                </p>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="button-crea-cuenta fs-5 fw-bold btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Crea tu Cuenta
+                </button>
+                <ul class="dropdown-menu" id="drop-container">
+                  <li class="drop-list">
+                    <a class="drop-button dropdown-item fw-bold" href="#"
+                      >Quieres Vender</a
+                    >
+                  </li>
+                  <li class="drop-list">
+                    <a class="drop-button dropdown-item fw-bold" href="#"
+                      >Quieres Comprar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- <div>
+                <button class="button-crea-cuenta fs-5 fw-bold">
+                  Crea tu cuenta
+                </button>
+              </div> -->
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="container-imagen1 ">
-        <div class="  row  bg-warning  mt-5 text-center">
-          <div class="col-3 bg-danger d-flex justify-content-center ">
-            <button><img class="imagenes-emp" src="assets/img/imagens emprendiemiento/brownies.png" alt=""></button>
+      <!-- ================================================================= EMPRENDEDORES ================================================= -->
+
+      <section class="container-imagen1">
+        <div class="row bg-warning mt-5 text-center">
+          <div class="col-3 bg-danger d-flex justify-content-center">
+            <button>
+              <img
+                class="imagenes-emp"
+                src="assets/img/imagens emprendiemiento/brownies.png"
+                alt=""
+              />
+            </button>
           </div>
-          <div class="col-3 bg-primary ">
-            2
-          </div>
-          <div class="col-3 bg-secondary ">
-            3
-          </div>
-          <div class="col-3 ">
-            4
-          </div>
+          <div class="col-3 bg-primary">2</div>
+          <div class="col-3 bg-secondary">3</div>
+          <div class="col-3">4</div>
         </div>
       </section>
-     
     </main>
   </body>
 </html>

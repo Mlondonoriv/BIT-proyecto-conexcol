@@ -2,13 +2,19 @@
   width: 90px !important;
 }
 .navbar-button {
-  color: yellow;
+  color: #fcbf49;
   border: solid 2px !important;
+}
+.navbar-color {
+  background-color: #003049;
 }
 
 .container-menu {
-  background-color: rgb(59, 59, 59) !important;
+  background-color: #003049 !important;
   border-radius: 0 10px 0 10px !important;
+}
+.text-color-yellow {
+  color: #fcbf49 !important;
 }
 
 .boton-buscar {
@@ -33,11 +39,14 @@
   border: none;
 }
 
+.prueba select {
+  appearance: none !important;
+}
+
 /* =========================== CENTRO DE LA PAGINA - MAIN===================================== */
 
 .imagen-container {
-  
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #d62828;
   width: 90%;
 }
 
@@ -45,7 +54,7 @@
   width: 100%;
   height: 300px;
   padding-bottom: 100px;
-  background-image: url(assets/img/imagen\ personas.png);
+  background-image: url(img-pas-1/img-comunidad.JPG);
   background-color: aqua;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,18 +62,45 @@
   border-radius: 40px 0 40px 0;
 }
 
-.imagen-prueba{
+.emprender {
+  color: #003049;
 
-  width: 200px;
-  height: 200px;
+  text-align: center;
+
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.transparencia {
+  margin-top: 80px !important;
   background-color: aqua;
+  width: 50%;
+  height: 120px;
+  border-radius: 40px 0 40px 0;
+}
+.glass-effect {
+  background-color: #fcf9f93a;
+  backdrop-filter: blur(0.5rem);
+}
+
+.button-crea-cuenta {
+  color: #003049;
+  margin-top: 90px;
+  background-color: #fcbf49;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px 0 20px 0;
+  border: none;
+}
+
+.button-crea-cuenta:hover {
+  background-color: #003049;
+  color: #fcbf49;
 }
 
 /* ============================IMAGENES DE EMPRENDEDORES ===================================== */
 
-.imagenes-emp{
+.imagenes-emp {
   width: 200px;
   height: 200px !important;
-
 }
-
