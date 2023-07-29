@@ -1,10 +1,39 @@
 a {
   text-decoration: none;
-  color: #003049;
+  
+}
+a:hover{
   font-weight: bold;
+  background-color: NONE;
+}
+i:hover{
+  color: #d62828;
+  transform: scale(1.1) !important;
 }
 
-p,
+#menu{
+  
+  margin-left: 180px;
+}
+.menu-navbar .navbar-collapse{
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+
+/* ==============================REMOVER EFECTO HOVER EN NAVBAR =========================== */
+.menu-navbar .navbar-collapse .navbar-nav .container-menu >li>a:hover
+{
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+
+/* ============= PRUEBA================ */
+
+.scroll-media:hover{
+ transform: scale(1.1);
+}
+
 h2 {
   color: #003049 !important;
 }
@@ -22,12 +51,13 @@ h2 {
 
 .container-menu {
   background-color: #003049 !important;
-  border-radius: 0 10px 0 10px !important;
+  border-radius: 10px 0 10px 0 !important;
 }
 .text-color-yellow {
   color: #fcbf49 !important;
 }
 
+/* ======================================================= BUSCAR =================================== */
 .boton-buscar {
   background-color: white;
 
@@ -55,6 +85,25 @@ h2 {
   list-style: none !important;
   text-decoration: none !important;
 }
+
+/* ===================================== BOTON FORM INGRESAR ======================== */
+
+.ingresar-btn{
+  background-color: #fcbf49 !important;
+  color: #003049 !important;
+  border-radius: 10px 0 10px 0;
+  border: transparent 1px;
+  width: 50%;
+  height: 30px;
+  
+}
+.ingresar-btn:hover{
+  background-color: #003049 !important;
+  color:#fcbf49 !important;
+  border:#fcbf49 solid 1px;
+  
+}
+
 
 /* =========================== CENTRO DE LA PAGINA - MAIN===================================== */
 
@@ -96,20 +145,42 @@ h2 {
   backdrop-filter: blur(0.5rem);
 }
 
+/* ========================================= BOTON CREA TU CUENTA ===================== */
+
 .button-crea-cuenta {
   color: #003049;
   margin-top: 90px;
   background-color: #fcbf49;
   width: 200px;
   height: 50px;
-  border-radius: 20px 0 20px 0;
+  border-radius: 10px 0 10px 0;
   border: none;
 }
 
-.button-crea-cuenta:hover {
-  background-color: #003049;
-  color: #fcbf49;
+.dropdown .button-crea-cuenta:hover {
+  
+  background-color: #003049 !important;
+  color: #fcbf49 !important;
 }
+
+.dropdown-menu{
+  background-color: #003049 !important;
+}
+.drop-button {
+  background-color: #003049;
+}
+
+.dropdown .dropdown-menu .drop-list .drop-button:hover{
+  text-decoration: none;
+  background-color: #003049;
+}
+
+.button-crea-cuenta .btn-secondary .dropdown-menu{
+  background-color: #003049;
+  
+
+}
+
 
 /* ============================SCROLL EMPRENDEDORES ===================================== */
 
@@ -293,6 +364,16 @@ article::-webkit-scrollbar-thumb {
 .footer-container {
   width: 60%;
   flex-wrap: wrap;
+  color: #fcbf49;
+}
+
+#footer{
+  background-color: #003049;
+  color: #fcbf49;
+}
+#footer, a{
+  
+  color: #fcbf49 !important;
 }
 
 /* ===================================CONTACTANOS FORMULARIO =============================== */
@@ -309,12 +390,12 @@ article::-webkit-scrollbar-thumb {
   border-radius: 40px 0 40px 0;
   overflow: hidden;
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   transition: all 600ms;
 }
 
 .contact-container:target {
-  background: rgba(0, 0, 0, 0.8);
+  background: #003049;
   visibility: visible;
   opacity: 1;
 }
@@ -344,7 +425,7 @@ article::-webkit-scrollbar-thumb {
   color: #003049;
   padding: 10px;
   font-size: 0.9rem;
-  border-radius: 20px 0 20px 0;
+  border-radius: 10px 0 10px 0;
 }
 
 .contact-form textarea {
@@ -352,8 +433,8 @@ article::-webkit-scrollbar-thumb {
   height: 200px;
 }
 .contact-form .send-button {
-  border: none;
-  outline: none;
+  border: transparent 1px solid;
+  
   background: #fcbf49;
   font-size: 1rem;
   font-weight: 500;
@@ -364,7 +445,7 @@ article::-webkit-scrollbar-thumb {
 .contact-form .send-button:hover {
   background: #003049;
   color: #fcbf49;
-  border: solid 1px #fcbf49;
+  border: solid 1px #fcbf49 !important;
 }
 
 .map iframe {
@@ -405,3 +486,66 @@ article::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translate(-50%, -100%);
 }
+
+
+/* ======================= UBICACION MAPA UBICACION  ===================== */
+
+.ubicacion-container {
+  max-width: 960px;
+  margin: auto;
+  background-color: #003049;
+  border-radius: 40px 0 40px 0;
+  height: 500px;
+  width: 900px;
+  z-index: 1;
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 1;
+  transition: all 600ms;
+
+  
+  /* transform: translate(-50%, -100%); */
+}
+
+.map-ubicacion iframe{
+  padding: 30px;
+  height: 500px;
+  width: 900px;
+  border-radius: 40px 0 40px 0;
+
+}
+
+
+
+
+.ubicacion-container:target {
+  background: #003049;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+@media (max-width: 964px) {
+  .ubicacion-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+/* ==============================REMOVER EFECTO HOVER EN NAVBAR =========================== */
+.menu-navbar .navbar-collapse .navbar-nav .container-menu >li>a:hover
+{
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+
+
+/* =================== prueba boton crea tu cuenta ============= */
+
