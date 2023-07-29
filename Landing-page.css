@@ -1,3 +1,14 @@
+a {
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
+}
+
+p,
+h2 {
+  color: #003049 !important;
+}
+
 .logo-1 {
   width: 90px !important;
 }
@@ -118,14 +129,13 @@
   width: 200px;
   height: 200px;
 }
-
+/* =============================================SCROLL HORIZONTALES ============================================ */
 article::-webkit-scrollbar {
-  
   border-radius: 10px 0 10px 0;
 }
 
 article::-webkit-scrollbar-track {
-  background-color: ;
+  
   border-radius: 10px 0 10px 0;
 }
 
@@ -133,6 +143,20 @@ article::-webkit-scrollbar-thumb {
   background-color: #003049;
   border-radius: 10px 0 10px 0;
   height: 5px;
+  border: 3px solid white;
+}
+
+/* =====================================SCROLL VERTICAL===================== */
+body::-webkit-scrollbar {
+  border-radius: 10px 0 10px 0;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px 0 10px 0;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #003049;
+  border-radius: 10px 0 10px 0;
+
   border: 3px solid white;
 }
 
@@ -182,10 +206,6 @@ article::-webkit-scrollbar-thumb {
   border: #d62828 1px solid;
 }
 
-
-
-
-
 /* ============================SCROLL EMPRENDEDORES ===================================== */
 
 .scroll-container {
@@ -206,12 +226,11 @@ article::-webkit-scrollbar-thumb {
 }
 
 article::-webkit-scrollbar {
-  
   border-radius: 10px 0 10px 0;
 }
 
 article::-webkit-scrollbar-track {
-  background-color: ;
+  
   border-radius: 10px 0 10px 0;
 }
 
@@ -225,38 +244,39 @@ article::-webkit-scrollbar-thumb {
 /* ===============================IMAGENES EMPRENDEDORES COMIDA RAPIDA ===================================== */
 
 .scroll-imagen-cr1 {
-  background-image: url();
+  background-image: url(img-pas-1/comida\ rapida\ 1.png);
 }
 
 .scroll-imagen-cr2 {
-  background-image: url(img-pas-1/logo\ pasteleria\ 2.jpg);
+  background-image: url(img-pas-1/comida\ rapida\ 2.png);
 }
 
 .scroll-imagen-cr3 {
-  background-image: url(img-pas-1/logo\ pasteleria\ 3.png);
+  background-image: url(img-pas-1/comida\ rapida\ 3.jpg);
 }
 
 .scroll-imagen-cr4 {
-  background-image: url(img-pas-1/logo-pasteleria-4.jpg);
+  background-image: url(img-pas-1/comida\ rapida\ 4.jpg);
 }
 
 .scroll-imagen-cr5 {
-  background-image: url(img-pas-1/logo\ pasteleria\ 5.png);
+  background-image: url(img-pas-1/comida\ rapida\ 5.jpg);
 }
 
 .scroll-imagen-cr6 {
-  background-image: url(img-pas-1/logo\ pasteleria\ 6.jpg);
+  background-image: url(img-pas-1/comida\ rapida\ 6.jpg);
 }
 
 .scroll-imagen-cr7 {
-  background-image: url(img-pas-1/logo\ pasteleria\ 7.png);
+  background-image: url(img-pas-1/comida\ rapida\ 7.png);
 }
 
 .scroll-imagen-cr8 {
-  background-image: url(img-pas-1/logo\ pasteleria\ 8.png);
+  background-image: url(img-pas-1/comida\ rapida\ 8.jpg);
 }
 
 .scroll-media {
+  position: center;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 25%;
@@ -268,3 +288,120 @@ article::-webkit-scrollbar-thumb {
   border: #d62828 1px solid;
 }
 
+/* ==================================FOOTER=============================== */
+
+.footer-container {
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+/* ===================================CONTACTANOS FORMULARIO =============================== */
+
+.contact-container {
+  max-width: 960px;
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  background: #003049;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 40px 0 40px 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 600ms;
+}
+
+.contact-container:target {
+  background: rgba(0, 0, 0, 0.8);
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.form-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fcbf49;
+  text-align: center;
+}
+
+.contact-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #003049;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 20px 0 20px 0;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact-form .send-button {
+  border: none;
+  outline: none;
+  background: #fcbf49;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.contact-form .send-button:hover {
+  background: #003049;
+  color: #fcbf49;
+  border: solid 1px #fcbf49;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 10px 0 10px 0;
+}
+/* ================== x PARA CERRAR FORMULARIO DE CONTACTO==================== */
+
+.btn-close-popup {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  padding: auto;
+
+  color: #fcbf49;
+  border-radius: 50%;
+  line-height: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 964px) {
+  .contact-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+/* ======================= UBICACION FORMULARIO CONTACTO ===================== */
+
+#contact-us {
+  z-index: 1;
+
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
