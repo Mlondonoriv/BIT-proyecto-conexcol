@@ -27,7 +27,7 @@
       <section class="container-fluid">
         <!--======================= ICONO ============================== -->
 
-        <a class="navbar-brand d-flex align-items-top" href="#">
+        <a class="navbar-brand container-fluid d-flex align-items-top" href="#">
           <img
             class="logo-1"
             src="assets/logos/logo_-removebg-preview.png"
@@ -35,17 +35,17 @@
           />
         </a>
         <!--======================= OPCIONES ============================== -->
-        <div class="texto-1">
+        <div class="texto-1 container-fluid">
           <h1 class="titulo">Opciones</h1>
         </div>
         <!--======================= BOTON VOLVER ============================== -->
-        <div class="texto-2">
+        <div class="texto-2 container-fluid">
           <button class="volver">Volver</button>
         </div>
       </section>
     </nav>
     <!--======================= CUERPO Y TEXTOS ============================== -->
-    <section class="centro-pag">
+    <section class="centro-pag container-fluid">
       <!--======================= texto inicial ============================== -->
       <div
         class="primer-texto d-flex justify.content-center align-items-center"
@@ -59,12 +59,106 @@
 
       <!--======================= nombre emprendimiento============================== -->
       <div
-        class="segundo-texto"
+        class="segundo-texto d-flex justify-content-center align-items-center"
       >
-      <form class="nombre-1"></form>
-<label for="" class="nombre">Escribe aqui el nombre de tu emprendimiento</label>
-<input type="text" class="espacio-nombre col-6">
+        <form class="nombre-1"></form>
+        <label for="" class="nombre"
+          >Escribe aqui el nombre de tu emprendimiento</label
+        >
+        <input type="text" class="espacio-nombre col-6" />
+      </div>
+      <!--======================= CENTRO DE LA PAGINA============================== -->
+      <div
+        class="caja-central container-fluid d-flex justify-content-space-around"
+      >
+        <!--======================= CAJA LOGO============================== -->
+        <div class="img-logo d-flex justify-content-center flex-column">
+          <form
+            action="#"
+            class="carga-tu-logo row d-flex justify-content-center"
+          >
+            <label for="" class="instruccion row d-flex justify-content-center"
+              >Carga aquí tu logo</label
+            >
+            <input type="text" class="caja-logo rounded-circle" />
+            <button class="subir-img row col-6">Subir Imagen</button>
+          </form>
+        </div>
+        <!--======================= CAJA PRODUCTOS============================== -->
 
+        <div
+          class="img-productos container-fluid d-flex justify-content-center flex-column"
+        >
+          <form
+            action="#"
+            class="carga-tus-productos row d-flex justify-content-center"
+          >
+            <label
+              for=""
+              class="instruccion-2 row d-flex justify-content-center"
+              >Carga aquí tus productos</label
+            >
+            <input type="text" class="caja-producto" />
+            <button class="subir-pro row col-6">Subir Producto</button>
+          </form>
+        </div>
+        <!--=======================CAJE 3 PARA FORMULARIO DE PRODUCTOS============================== -->
+        <div
+          class="form-products container-fluid d-flex justify-content-center flex-column"
+        >
+          <h3 class="text-3">Diligencia los datos de tu producto</h3>
+          <!--======================= FORMULARIO DE PRODUCTOS============================== -->
+
+          <form
+            action=""
+            class="formulario-productos d-flex justify-content-center flex-column"
+          >
+            <label for="" class="instruccion-3 row d-flex flex-start"
+              >Nombre producto</label
+            >
+            <input type="text" class="form-prod-1" />
+
+            <label for="" class="instruccion-3 row d-flex flex-start"
+              >Descripción</label
+            >
+            <input type="text" class="form-prod-2" />
+            <label for="" class="instruccion-3 row d-flex flex-start"
+              >precio</label
+            >
+            <input type="text" class="form-prod-1" />
+
+            <button class="cargar-pro row col-6">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--=======================FOOTER============================== -->
+
+    <section class="pie-opc">
+      <footer class="footer footer-expand-md navbar-dark footer-color">
+        <section class="container-fluid">
+          <!--======================= ICONO ============================== -->
+
+          <a class="footer-brand d-flex align-items-top" href="#">
+            <img
+              class="logo-1"
+              src="assets/logos/logo_-removebg-preview.png"
+              alt=""
+            />
+          </a>
+          <!--======================= INFORMACION DE CONTACTO ============================== -->
+          <div class="texto-fin">
+            <p class="pie-2">Información de contacto</p>
+
+            <div class="iconos-redes">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-youtube"></i>
+            </div>
+          </div>
+        </section>
+      </footer>
     </section>
   </body>
 </html>
