@@ -1,0 +1,54 @@
+.logo-1 {
+    width: 90px !important;
+  }
+
+  .navbar-color {
+    background-color: #003049;
+  }
+.texto-1{
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: #FCBF49;
+margin-right: 25vh;
+}
+.titulo{
+font-size: 60px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.volver{
+border: none;
+background-color: #003049;
+font-size: 18px;
+color: #FCBF49;
+margin-right: 28px;
+}
+.centro-pag{
+width: 100%;
+background-color: aqua;
+height: 1200px;
+}
+.tex-ini{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 50px;
+margin-left: 250px;
+margin-top: 50px;
+}
+.segundo-texto{
+display: flex;
+justify-content: center;
+margin-top: 60px;
+}
+.segundo-texto{
+display: flex;
+flex-direction: column;
+}
+.nombre{
+font-size: 40px;
+display: flex;
+justify-content: center;
+}
+.espacio-nombre{
+    display: flex;
+    justify-content: center;
+}
