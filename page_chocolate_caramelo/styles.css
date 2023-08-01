@@ -22,7 +22,7 @@
     border-radius: 10px 0 10px 0 ;
 }
 #galeria img:hover{
-    border: 5px solid rgba(0, 0, 255, 0.267);
+    border: 5px solid rgba(255, 0, 0, 0.315);
 }
 #footer{
     width: 100%;
