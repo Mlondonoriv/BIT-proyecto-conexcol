@@ -524,11 +524,187 @@ a {
 
 /* ==============================REMOVER EFECTO HOVER EN NAVBAR =========================== */
 
-.dropdown-menu a:hover{
-  background-color:transparent !important;
+.dropdown-menu a:hover {
+  background-color: transparent !important;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
   background-color: #003049 !important;
+}
+
+/*  =========================== FORMULARIO VENDER ============================ */
+
+/* ===================================QUIERES VENDER  FORMULARIO =============================== */
+
+.formulario-vender {
+  max-width: 960px;
+  margin: auto;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+
+  gap: 3.5rem;
+  background:#003049;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 40px 0 40px 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 1;
+  transition: all 600ms;
+}
+
+.formulario-vender:target {
+  background: #003049;
+  visibility: visible;
+  opacity: 1;
+}
+
+.vender-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.vender-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #003049;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 10px 0 10px 0;
+}
+
+.vender-form .send-button {
+  border: transparent 1px solid;
+
+  background: #fcbf49;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.vender-form .send-button:hover {
+  background: #003049;
+  color: #fcbf49;
+  border: solid 1px #fcbf49 !important;
+}
+
+.terms-input {
+  width: 1rem;
+  align-items: center;
+  font-size: small;
+  text-align: right;
+  justify-content: center;
+}
+
+.form-vender-container {
+  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ======================= UBICACION FORMULARIO quieres vender  ===================== */
+
+#form-vender {
+  z-index: 1;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+/*  =========================== FORMULARIO COMPRAR ============================ */
+
+/* ===================================QUIERES COMPRAR  FORMULARIO =============================== */
+
+.formulario-comprar {
+  max-width: 960px;
+  margin: auto;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+
+  gap: 3.5rem;
+  background:#003049;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 40px 0 40px 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 1;
+  transition: all 600ms;
+}
+
+.formulario-comprar:target {
+  background: #003049;
+  visibility: visible;
+  opacity: 1;
+}
+
+.comprar-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.comprar-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  color: #003049;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 10px 0 10px 0;
+}
+
+.comprar-form .send-button {
+  border: transparent 1px solid;
+
+  background: #fcbf49;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.comprar-form .send-button:hover {
+  background: #003049;
+  color: #fcbf49;
+  border: solid 1px #fcbf49 !important;
+}
+
+.terms-input {
+  width: 1rem;
+  align-items: center;
+  font-size: small;
+  text-align: right;
+  justify-content: center;
+}
+
+.form-comprar-container {
+  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ======================= UBICACION FORMULARIO quieres vender  ===================== */
+
+#form-comprar {
+  z-index: 1;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }
 
