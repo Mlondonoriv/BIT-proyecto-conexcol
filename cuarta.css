@@ -5,6 +5,9 @@
   .navbar-color {
     background-color: #003049;
   }
+  *{
+    font-family: 'Questrial', sans-serif;
+  }
 .texto-1{
 display: flex;
 justify-content: space-around;
@@ -29,7 +32,7 @@ height: 1100px;
 }
 .tex-ini{
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 50px;
+font-size: 30px;
 margin-left: 250px;
 margin-top: 50px;
 }
@@ -54,9 +57,10 @@ justify-content: center;
     height: 80px;
     margin-top: 30px;
     border-radius: 20px 0 20px 0;
-    border-color: red;
+    border: 1px solid #d62828;
     background-color: rgba(107, 107, 107, 0.112);
 }
+
 .caja-central{
 background-color: white;
 width: 100%;
@@ -68,7 +72,7 @@ width: 500px;
 height: 500px;
 }
 .carga-tu-logo{
-font-size: 30px;
+font-size: 25px;
 font-family: Arial, Helvetica, sans-serif;
 display: flex;
 justify-content: flex-start;
@@ -76,8 +80,8 @@ justify-content: flex-start;
 .caja-logo{
 width: 300px;
 height: 300px;
-border-color: red;
-border-width: 5px;
+border-radius: 20px 0 20px 0;
+border: 1px solid #d62828;
 margin-top: 20px;
 background-color: rgba(107, 107, 107, 0.112);
 }
@@ -95,15 +99,13 @@ color: #FCBF49;
     height: 500px;   
 }
 .carga-tus-productos{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     display: flex;
     justify-content: flex-start;
 
 }
 .instruccion-2{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     display: flex;
     justify-content: flex-start;}
 
@@ -111,8 +113,8 @@ color: #FCBF49;
 width: 300px;
 height: 300px;
 margin-top: 20px;
-border-color: red;
-border-width: 5px;
+border-radius: 20px 0 20px 0;
+    border: 1px solid #d62828;
 border-radius: 20px 0 20px 0;
 background-color: rgba(107, 107, 107, 0.112);
 }
@@ -134,14 +136,12 @@ margin-left: 60px;
 margin-top: 50px;
 }
 .text-3{
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
 }
 
 
 .instruccion-3{
 font-size: 18px;
-font-family: Arial, Helvetica, sans-serif;
 display: flex;
 justify-content: flex-start;
 }
@@ -149,8 +149,8 @@ justify-content: flex-start;
 width: 300px;
 margin-top: 10px;
 border-radius: 20px 0 20px 0;
-border-width: 3px;
-border-color: red;
+border-radius: 20px 0 20px 0;
+border: 1px solid #d62828;
 background-color: rgba(107, 107, 107, 0.112);
 }
 .form-prod-2{
@@ -158,8 +158,8 @@ width: 300px;
 height: 80px;
 margin-top: 10px;
 border-radius: 20px 0 20px 0;
-border-width: 3px;
-border-color: red;
+border-radius: 20px 0 20px 0;
+border: 1px solid #d62828;
 background-color: rgba(107, 107, 107, 0.112);
 }
 .cargar-pro{
@@ -171,34 +171,22 @@ background-color: #003049;
 color: #FCBF49;
 width: 250px;
 height: 50px;
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
 margin-top: 60px;
 }
-.footer-color {
-    background-color: #003049;
-    margin-top: 30px;
-    height: 100px;
+/* ==================================FOOTER=============================== */
+
+.footer-container {
+    width: 60%;
+    flex-wrap: wrap;
+    color: #fcbf49;
   }
-.texto-fin{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #FCBF49;
-    margin-top: -90PX;
-}
-.pie-2{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 500px;
-}
-.iconos-redes{
-font-size: 50px;
-display: flex;
-justify-content: end;
-gap: 20px;
-color: grey;
-}
+  
+  #footer{
+    background-color: #003049;
+    color: #fcbf49;
+  }
+  #footer, a{
+    
+    color: #fcbf49 !important;
+  }
