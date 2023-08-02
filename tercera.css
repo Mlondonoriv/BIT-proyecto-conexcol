@@ -1,7 +1,9 @@
 .logo-1 {
     width: 90px !important;
   }
-
+*{
+    font-family: 'Questrial', sans-serif;
+  }
   .navbar-color {
     background-color: #003049;
   }
@@ -60,30 +62,19 @@ width: 900px;
 .form-check{
 margin-top: 60px;
 }
- .footer-color {
-    background-color: #003049;
-    margin-top: 30px;
-    height: 100px;
-  }
-.texto-fin{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #FCBF49;
-    margin-top: -90PX;
+/* ==================================FOOTER=============================== */
+
+.footer-container {
+  width: 60%;
+  flex-wrap: wrap;
+  color: #fcbf49;
 }
-.pie-2{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 500px;
+
+#footer{
+  background-color: #003049;
+  color: #fcbf49;
 }
-.iconos-redes{
-font-size: 50px;
-display: flex;
-justify-content: end;
-gap: 20px;
-color: grey;
+#footer, a{
+  
+  color: #fcbf49 !important;
 }
