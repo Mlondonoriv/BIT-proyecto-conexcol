@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- link bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +16,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+
+    <!-- link styles css -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi&family=Questrial&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="pb-5">
@@ -41,9 +52,9 @@
                     alt=""
                   />
                   <h1 class="pt-1 fs-6 mb-0 text-center">
-                    Chokitos Bocados de chocolates
+                    Cupcakes De Vainilla Fresa
                   </h1>
-                  <p class="mb-1 text-center">$10.000</p>
+                  <p class="mb-1 text-center">$18.000</p>
                   <div class="w-100 d-flex justify-content-center">
                     <a class="text-decoration-none" href="/"
                       >Añadir al carrito</a
@@ -56,9 +67,9 @@
                     alt=""
                   />
                   <h1 class="pt-1 fs-6 mb-0 text-center">
-                    Chokitos Bocados de chocolates
+                    Cheesecake De Frutos Rojos
                   </h1>
-                  <p class="mb-1 text-center">$10.000</p>
+                  <p class="mb-1 text-center">$14.000</p>
                   <div class="w-100 d-flex justify-content-center">
                     <a class="text-decoration-none" href="/"
                       >Añadir al carrito</a
@@ -70,10 +81,8 @@
                     src="assets/img/imagens emprendiemiento/pudin de caramelo.png"
                     alt=""
                   />
-                  <h1 class="pt-1 fs-6 mb-0 text-center">
-                    Chokitos Bocados de chocolates
-                  </h1>
-                  <p class="mb-1 text-center">$10.000</p>
+                  <h1 class="pt-1 fs-6 mb-0 text-center">Flan De Chocolate</h1>
+                  <p class="mb-1 text-center">$25.000</p>
                   <div class="w-100 d-flex justify-content-center">
                     <a class="text-decoration-none" href="/"
                       >Añadir al carrito</a
@@ -94,7 +103,7 @@
                   <h1 class="pt-1 fs-6 mb-0 text-center">
                     Chokitos Bocados de chocolates
                   </h1>
-                  <p class="mb-1 text-center">$10.000</p>
+                  <p class="mb-1 text-center">$15.000</p>
                   <div class="w-100 d-flex justify-content-center">
                     <a class="text-decoration-none" href="/"
                       >Añadir al carrito</a
@@ -156,33 +165,80 @@
         </button>
       </div>
     </main>
+
     <footer
       id="footer"
-      class="mt-5 d-flex justify-content-center align-items-center"
+      class="mt-5 d-flex justify-content-center align-items-bottom"
     >
-      <section class="container text-center">
-        <div id="footr_logo" class="row py-4">
-          <div class="col-md-2 col-lg-2">
-            <a href=""><img src="img-pas-1/logo pasteleria 2.jpg" alt="#" /></a>
+      <section
+        class="footer-container p-3 d-flex justify-content-around m-0 align-items-center"
+      >
+        <p>
+          <a class="text-decoration-none" href="#contact-us">Contáctanos</a>
+        </p>
+
+        <p>
+          <a
+            class="text-decoration-none"
+            href="TerminosYCondiciones.html"
+            target="_blank"
+            >Términos y Condiciones</a
+          >
+        </p>
+
+        <p class="d-flex justify-content-around">
+          <span>Síguenos</span>
+          <span class="ms-4 me-2"
+            ><a
+              href="https://www.facebook.com/BogotaInstituteOfTechnology"
+              target="_blank"
+              ><i class="bi bi-facebook"></i></a
+          ></span>
+          <span class="mx-2"
+            ><a
+              href="https://www.instagram.com/bit_institute/?hl=es-la"
+              target="_blank"
+              ><i class="bi bi-instagram"></i></a
+          ></span>
+          <span class="mx-2"
+            ><a
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2Fbit_institute"
+              target="_blank"
+              ><i class="bi bi-twitter"></i></a
+          ></span>
+        </p>
+      </section>
+      <section class="">
+        <!-- ===============================COINTACT CONTAINER=========================  -->
+        <div class="contact-container" id="contact-us">
+          <!-- =================================== FORM ========================= -->
+          <div class="form-container">
+            <h3>Escribe tu mensaje</h3>
+            <form action="" class="contact-form">
+              <input type="text" placeholder="Nombre" required />
+              <input type="email" placeholder="Email" required />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Deja tu mensaje"
+                required
+              ></textarea>
+              <input type="submit" value="Enviar" class="send-button" />
+            </form>
           </div>
-          <div class="col-md-6 col-sm-12 text-center">
-            <div class="mt-2">
-              <a class="tex-dark text-decoration-none text-light" href="#"
-                >Informacion De Contacto</a
-              >
-            </div>
+          <!-- ==========================MAPA====================== -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.5183297699!2d-74.2726173206093!3d4.648278403919148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1690589044606!5m2!1ses!2sco"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <div class="col-md-4 col-sm-12">
-            <a id="logos_redes" href="#"
-              ><img src="img-pas-1/Instagram2_logo.svg.png" alt="#"
-            /></a>
-            <a id="logos_redes1" href=""
-              ><img src="img-pas-1/Black-Facebook.png" alt="#"
-            /></a>
-            <a id="logos_redes2" href="#"
-              ><img src="img-pas-1/telegram-minimal-logo-.png" alt="#"
-            /></a>
-          </div>
+          <a href="#footer" class="btn-close-popup text-warning">X</a>
         </div>
       </section>
     </footer>
