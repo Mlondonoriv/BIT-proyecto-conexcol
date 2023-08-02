@@ -1,22 +1,25 @@
+h1{
+    font-family: 'Questrial', sans-serif;
+}
+
 #img_logo{
     width: 200px;
     height: 200px;
     
 }
 .text_principal{
-    color: aliceblue;
+    color:#ffe8a3 ;
+    font-family: 'Questrial', sans-serif;
+    padding: 5px;
 }
 .container_text{
     background-color: #003049;
-    color:#ffe8a3 ;
+
     padding: 5px;
     width: 600px;
     border-radius: 15px 0 15px 0 ;
 }
-.container_text h4{
-    color:#ffe8a3 ;
-    padding: 5px;
-}
+
 #galeria .col-lg-4{
     margin: 0 !important;
     padding: 25px;
@@ -29,6 +32,22 @@
 #galeria img:hover{
     border: 5px solid #d62828;
 }
+#galeria h1{
+    font-family: 'Questrial', sans-serif;
+    
+}
+#galeria p{
+    font-family: 'Questrial', sans-serif;
+    
+}
+#galeria a{
+    font-family: 'Questrial', sans-serif;  
+    font-weight: 700;
+}
+#galeria a:hover{
+    color: #d62828;
+}
+
 #footer{
     width: 100%;
     height: 130px;
@@ -55,3 +74,138 @@
     height: 40px;
     margin-left: 20px;
 }
+/* ==================================FOOTER=============================== */
+
+.footer-container {
+    width: 60%;
+    flex-wrap: wrap;
+    color: #fcbf49;
+    gap: initial;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  
+  #footer {
+    background-color: #003049;
+    color: #fcbf49;
+  }
+  #footer a {
+    color: #fcbf49 !important;
+    font-family: 'Questrial', sans-serif;
+
+
+    
+  }
+  
+  /* ===================================CONTACTANOS FORMULARIO =============================== */
+  
+  .contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: #003049;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 40px 0 40px 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 1;
+    transition: all 600ms;
+  }
+  
+  .contact-container:target {
+    background: #003049;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .form-container {
+    padding: 20px;
+  }
+  
+  .form-container h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fcbf49;
+    text-align: center;
+  }
+  
+  .contact-form {
+    display: grid;
+    row-gap: 1rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    color: #003049;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 10px 0 10px 0;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 200px;
+  }
+  .contact-form .send-button {
+    border: transparent 1px solid;
+  
+    background: #fcbf49;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .contact-form .send-button:hover {
+    background: #003049;
+    color: #fcbf49;
+    border: solid 1px #fcbf49 !important;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1.5rem;
+    border-radius: 10px 0 10px 0;
+  }
+  /* ================== x PARA CERRAR FORMULARIO DE CONTACTO==================== */
+  
+  .btn-close-popup {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    padding: auto;
+  
+    color: #fcbf49;
+    border-radius: 50%;
+    line-height: 10px;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 964px) {
+    .contact-container {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+  
+  /* ======================= UBICACION FORMULARIO CONTACTO ===================== */
+  
+  #contact-us {
+    z-index: 1;
+  
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  
+ 
