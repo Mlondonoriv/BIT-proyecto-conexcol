@@ -1,22 +1,25 @@
+h1{
+    font-family: 'Questrial', sans-serif;
+}
+
 #img_logo{
     width: 200px;
     height: 200px;
     
 }
 .text_principal{
-    color: aliceblue;
+    color:#ffe8a3 ;
+    font-family: 'Questrial', sans-serif;
+    padding: 5px;
 }
 .container_text{
     background-color: #003049;
-    color:#ffe8a3 ;
+
     padding: 5px;
     width: 600px;
     border-radius: 15px 0 15px 0 ;
 }
-.container_text h4{
-    color:#ffe8a3 ;
-    padding: 5px;
-}
+
 #galeria .col-lg-4{
     margin: 0 !important;
     padding: 25px;
@@ -29,6 +32,22 @@
 #galeria img:hover{
     border: 5px solid #d62828;
 }
+#galeria h1{
+    font-family: 'Questrial', sans-serif;
+    
+}
+#galeria p{
+    font-family: 'Questrial', sans-serif;
+    
+}
+#galeria a{
+    font-family: 'Questrial', sans-serif;  
+    font-weight: 700;
+}
+#galeria a:hover{
+    color: #d62828;
+}
+
 #footer{
     width: 100%;
     height: 130px;
@@ -70,9 +89,12 @@
     background-color: #003049;
     color: #fcbf49;
   }
-  #footer,
-  a {
+  #footer a {
     color: #fcbf49 !important;
+    font-family: 'Questrial', sans-serif;
+
+
+    
   }
   
   /* ===================================CONTACTANOS FORMULARIO =============================== */
