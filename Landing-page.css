@@ -6,8 +6,8 @@ a:hover {
   background-color: NONE;
 }
 i:hover {
-  color: #d62828;
-  transform: scale(1.1) !important;
+  font-size: large;
+  font-weight: bolder !important;
 }
 
 #menu {
@@ -81,6 +81,13 @@ h2 {
   color: #fcbf49;
   list-style: none !important;
   text-decoration: none !important;
+}
+
+/* =============================== BOTON BUSCAR ============================ */
+
+.boton-buscar:hover {
+  background-color: #003049 !important;
+  color: #fcbf49 !important;
 }
 
 /* ===================================== BOTON FORM INGRESAR ======================== */
@@ -383,6 +390,7 @@ a {
   visibility: hidden;
   opacity: 1;
   transition: all 600ms;
+  margin-bottom: 200px !important;
 }
 
 .contact-container:target {
@@ -473,9 +481,9 @@ a {
   z-index: 1;
 
   position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%, -100%);
+  top: 80%;
+  left: 30%;
+  transform: translate(-20%, -3%);
 }
 
 /* ======================= UBICACION MAPA UBICACION  ===================== */
@@ -547,7 +555,7 @@ a {
   height: 500px;
 
   gap: 3.5rem;
-  background:#003049;
+  background: #003049;
   box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
   border-radius: 40px 0 40px 0;
   overflow: hidden;
@@ -603,7 +611,6 @@ a {
 }
 
 .form-vender-container {
-  
   display: flex;
   justify-content: center;
   width: 100%;
@@ -635,7 +642,7 @@ a {
   height: 500px;
 
   gap: 3.5rem;
-  background:#003049;
+  background: #003049;
   box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
   border-radius: 40px 0 40px 0;
   overflow: hidden;
@@ -691,7 +698,6 @@ a {
 }
 
 .form-comprar-container {
-  
   display: flex;
   justify-content: center;
   width: 100%;
@@ -707,4 +713,19 @@ a {
   left: 50%;
   transform: translate(-50%, -10%);
 }
+      /*  ======================= FUENTES ============================ */
 
+*{
+ font-family: 'Questrial', sans-serif;
+}
+
+.logo-nombre-fuente-1{
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+.logo-nombre-fuente-2{
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
